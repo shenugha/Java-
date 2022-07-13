@@ -1,0 +1,373 @@
+class vehicle{
+    void run(){
+        System.out.println("vehicle is running.");
+    }
+}
+class Main extends vehicle{
+    void run(){
+        System.out.println("bike is running safely.");
+    }
+    public static void main(String[] args){
+        Main obj = new Main();
+        obj. import java.util.Scanner;
+}
+}
+
+class Main{
+    public static void main(String[] args){
+        String s1, s2;
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter first string :");
+        s1 = in.next();
+        System.out.println("enter second string :");
+        s2 = in.next();
+        
+        System.out.println("length of second string :" +s2.length());
+        System.out.println("replace char 'e' with char 'b' :"+s1.replace('e','b'));
+        System.out.println("Concatenated string is : " +s1.concat(class Publisher{
+    String publisher;
+    Publisher(String publi){
+        this.publisher = publi;
+    }
+}
+class Book{
+    String name;
+    Publisher publisher;
+    Book(){}
+    public Book(String name, Publisher publisher){
+        this.name = name;
+        this.publisher = publisher;
+    }
+}
+class Literature extends Book{
+    String Lit_type = "Literature";
+    Literature(String name, Publisher publisher){
+        super(name,publisher);
+    }
+    void display(){
+        System.out.println("Name : "+super.name);
+        System.out.println("Type : "+this.Lit_type);
+        System.out.println("Publisher : "+this.publisher.publisher);
+    }
+}
+class Fiction extends Book{
+    String Lit_type = "Fiction";
+    Fiction(String name, Publisher publisher){
+        super(name,publisher);
+    }
+    void display(){
+        System.out.println("Name : "+super.name);
+        System.out.println("Type : "+this.Lit_type);
+        System.out.println("Publisher : "+this.publisher.publisher);
+    }
+}
+public class pub{
+    public static void main(String[] args){
+        Publisher lp = new Publisher("S.Chand");
+        Literature l = new Literature("As You Like It", lp);
+        l.display();
+        
+        Publisher fp = new Publisher("Tata McGraw Hill");
+        Literature f = new Literature("Tempest", fp);
+        f. import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("enter row :");
+        int row = in.nextInt();
+        System.out.println("enter col :");
+        int col = in.nextInt();
+        
+        int mat[][] = new int[row][col];
+        
+        System.out.println("enter matrix values :");
+        for(int i=0; i<row; i++){
+            for(int j=0; j<col; j++){
+                mat[i][j] = in.nextInt();
+            }
+        }
+        if(row!=col){
+            System.out.println("matrix is not square.");
+        }
+        else{
+            boolean symm = true;
+            for(int i=0; i<row; i++){
+                for(int j=0; j<col; j++){
+                    if(mat[i][j] != mat[j][i]){
+                        symm = false;
+                        break;
+                    }
+                }
+            }
+            if(symm){
+                System.out.println("The matrix is symmetric....");
+            }
+            else{
+                System.out.println("Is not symmetric....");
+            }
+        }
+        in. class overloadc{
+    void sum(int a, long b){
+        System.out.println(a+b);
+    }
+    void sum(int a, int b, int c){
+        System.out.println(a+b+c);
+    }
+    public static void main(String[] args){
+        overloadc obj = new overloadc();
+        obj.sum(10,10);
+        obj.sum(10,10, import java.util.Scanner;
+import java.util.Arrays;
+
+class Main{
+    public static void main(String[] args){
+        int size, i, srch, res;
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("enter array size :");
+        size = in.nextInt();
+        
+        int[] arr = new int[size];
+        
+        System.out.println("enter the values :");
+        for(i=0; i<size; i++)
+        arr[i] = in.nextInt();
+        
+        System.out.println("The array : " + Arrays.toString(arr));
+        System.out.println(" ");
+        System.out.println("enter value to be search : ");
+        srch = in.nextInt();
+        System.out.println("the value to be search is : " + srch);
+        res = Arrays.binarySearch(arr,srch);
+        if(res<0)
+            System.out.println("not found");
+        else
+            System.out.println("found at index: "+ res +"in the import java.util.Scanner;
+class Employee
+{
+int eNo,eSalary;
+String eName;
+public Employee (int no , int sal,String name)
+{
+eNo=no ;
+eSalary=sal ;
+eName = name ;
+}
+public void showData ( )
+{
+System.out.print ("EmpId = "+eNo + " " + " Name = "+eName + " " + " Salary= "+eSalary ) ;
+System.out.println( ) ;
+}
+}
+public class emparray
+{
+public static void main(String [ ] args )
+{
+System.out.println("Enter number of employees : " ) ;
+Scanner sc = new Scanner(System.in ) ;
+int n = sc.nextInt ( );
+System.out.println("Enter Employee details one by one " ) ;
+// create array of objects
+Employee employees[ ] = new Employee[n] ;
+Scanner sc_emp = new Scanner (System . in ) ;
+int eid ,esal ;
+String enam;
+for(int i =0; i<n;i++)
+{
+System.out.println ( "Enter "+ i + " employee details " ) ;
+
+System.out.println( "Enter employee id" ) ;
+eid = sc_emp.nextInt ( ) ;
+System.out.println( "Enter employee name: " ) ;
+String nam = sc_emp.next ( ) ;
+enam = new String(nam) ;
+System.out.println("Enter employee salary: " ) ;
+esal = sc_emp.nextInt ( ) ;
+Employee emp = new Employee(eid,esal,enam) ;
+employees[i]=emp ;
+}
+System.out.println("Employees are : n" ) ;
+for(Employee y : employees )
+y.showData ( ) ;
+System.out.println("Enter employee id to search : " ) ;
+int semp = sc.nextInt();
+boolean found = false ;
+for (Employee e:employees)
+{
+if(semp == e.eNo)
+{
+found = true ;
+System.out.println("Employee found") ;
+e.showData ( ) ;
+break ;
+}
+}
+if(!found )
+{
+System.out.println("Employee not class CPU
+{
+ double price;
+ class Processor
+  {
+   double core;
+   String manufacturer;
+   double getCache()
+    {
+      return 3.40;
+    }
+  }
+protected class RAM
+{
+double memory;
+String manufracturer;
+
+double getClockSpeed()
+{
+return 5.2;
+}
+}
+}
+public class cpu
+{
+public static void main(String[] args)
+{
+CPU cpu = new CPU();
+CPU.Processor processor = cpu.new Processor();
+CPU.RAM ram = cpu.new RAM();
+System.out.println("Processor cache -" + processor.getCache());
+System.out.println("Ram Clock Speed -" + ram. public class cmplx
+{
+ double real,img;
+ cmplx(double r, double i)
+  {
+   this.real = r;
+   this.img = i;
+  }
+public static cmplx sum(cmplx c1, cmplx c2)
+{
+ cmplx temp = new cmplx(0,0);
+ temp.real = c1.real + c2.real;
+ temp.img = c1.img + c2.img;
+ return temp;
+}
+public static void main(String[] args)
+{
+cmplx c1 = new cmplx(5.5,4);
+cmplx c2 = new cmplx(1.2,3.5);
+cmplx temp = sum(c1,c2);
+
+System.out.println("Sum is :"+temp.real+"+"+temp.img+"import java.util.Scanner;
+class linearsrchuser{
+ public static void main(String args[]){
+ int n, search, arr[];
+ int c = 0;
+ Scanner in = new Scanner(System.in);
+ System.out.println("Enter number of elements : ");
+ n = in.nextInt();
+ arr = new int[n];
+ System.out.println("Enter those : "+n+" : elements");
+ for(c=0;c<n;c++)
+ arr[c] = in.nextInt();
+ System.out.println("Enter value to find : ");
+ search = in.nextInt();
+ c=c+1;
+ for(c=0;c<n;c++){
+ if(arr[c]==search){
+ System.out.println(search+" : is present at index : "+c+".");
+ break;
+}
+}
+ if(c==n)
+ System.out.println(search+" : isn't present in /*Java Program to add two matrix*/
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        int p, q, m, n;    //Declare matrix size
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of rows in the first matrix:");
+        p = sc.nextInt();    //Initialize first matrix size
+        System.out.print("Enter the number of columns in the first matrix:");
+        q = sc.nextInt();   //Initialize first matrix size
+        System.out.print("Enter the number of rows in the second matrix:");
+        m = sc.nextInt();   //Initialize second matrix size
+        System.out.print("Enter the number of columns in the second matrix:");
+        n = sc.nextInt();   //Initialize second matrix size
+        if (p == m && q == n) 
+        {
+            int a[][] = new int[p][q];    //Declare first matrix
+            int b[][] = new int[m][n];    //Declare second matrix
+            int c[][] = new int[m][n];    //Declare third matrix
+            //Initialize the first matrix
+            System.out.println("Enter all the elements of first matrix:");
+            for (int i = 0; i < p; i++) 
+            {
+                for (int j = 0; j < q; j++) 
+                {
+                    a[i][j] = sc.nextInt();
+                }
+            }
+            System.out.println("");
+            //Initialize the second matrix
+            System.out.println("Enter all the elements of second matrix:");
+            for (int i = 0; i < m; i++) 
+            {
+                for (int j = 0; j < n; j++) 
+                {
+                    b[i][j] = sc.nextInt();
+                }
+            }
+            System.out.println("");
+            //Print the first matrix
+            System.out.println("First Matrix:");
+            for (int i = 0; i < p; i++) 
+            {
+                for (int j = 0; j < q; j++) 
+                {
+                    System.out.print(a[i][j]+" ");
+                }
+                System.out.println("");
+            }
+            //Print the second matrix
+            System.out.println("Second Matrix:");
+            for (int i = 0; i < m; i++) 
+            {
+                for (int j = 0; j < n; j++) 
+                {
+                    System.out.print(b[i][j]+" ");
+                }
+                System.out.println("");
+            }
+            //Loop to add matrix elements
+            for (int i = 0; i < p; i++) 
+            {
+                for (int j = 0; j < n; j++) 
+                {
+                    for (int k = 0; k < q; k++) 
+                    {
+                        c[i][j] = a[i][j] + b[i][j];
+                    }
+                }
+            }
+            //Print the resultant matrix
+            System.out.println("Matrix after addition:");
+            for (int i = 0; i < p; i++) 
+            {
+                for (int j = 0; j < n; j++) 
+                {
+                    System.out.print(c[i][j]+" ");
+                }
+                System.out.println("");
+            }
+        }
+        else
+        {
+            System.out.println("Addition not possible");
+            System.out.println("Try Again");
+        }
+    }
+
+
